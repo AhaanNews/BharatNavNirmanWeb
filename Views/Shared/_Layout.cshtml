@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="navbar-header" style="float:left;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                <div style="padding:10px;margin-left:-40px;display:block;opacity:1;">
+                    <img src="~/Content/Images/BnnLogo.png" style="width:200px;height:75px;" />
+                </div>                
+             </div>
+            @Html.Partial("_SocialSite")
+            <div class="navbar-collapse collapse" style="width:80%;margin-left:150px;margin-top:-20px;">
+                @Html.Partial("_LoginPartial")
+                @*<ul class="nav navbar-nav">*@
+                <ul class="nav navbar-nav">
+                    @*<li><span class="glyphicon glyphicon-home"> @Html.ActionLink("पहला पन्ना", "Index", "Home")</span></li>*@
+                    <li>@Html.ActionLink("पहला पन्ना", "Index", "Home")</li>
+                    <li>@Html.ActionLink("भारत नव निर्माण", "About", "Home")</li>
+                    <li>@Html.ActionLink("दूरदर्शिता और मिशन", "About", "Home")</li>
+                    <li>@Html.ActionLink("भारत दर्शन", "About", "Home")</li>
+                    <li>@Html.ActionLink("भारतीय संविधान", "About", "Home")</li>
+                    <li>@Html.ActionLink("राजनीति संयोजन", "About", "Home")</li>
+                    <li>@Html.ActionLink("पुस्तकालय", "About", "Home")</li>
+                    <li>@Html.ActionLink("योजना", "About", "Home")</li>
+                    <li>@Html.ActionLink("सूचना खिड़की", "About", "Home")</li>
+                    <li>@Html.ActionLink("सेवा खिड़की", "About", "Home")</li>
+                    <li>@Html.ActionLink("प्रकाशन", "About", "Home")</li>
+                    <li>@Html.ActionLink("आवेदन प्रपत्र", "About", "Home")</li>
+                    @*<li><span class="glyphicon glyphicon-earphone"> @Html.ActionLink("संपर्क", "Contact", "Home")</span></li>*@
+                    <li>@Html.ActionLink("संपर्क", "Contact", "Home")</li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <hr />
+        @RenderBody()
+        <hr />
+        <footer>
+            <p style="font-family:Arial;">Copy Right <span class="glyphicon glyphicon-copyright-mark"/> @DateTime.Now.Year-@DateTime.Now.AddYears(5).Year @Resources.BNNResource.FooterText</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
