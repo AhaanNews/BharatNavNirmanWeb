@@ -1,13 +1,9 @@
 ﻿@font-face {
-    font-family: 'k010';
-    src: url('k010-webfont.woff') format('woff'),
-    url('k010.TTF') format('truetype'),
-    url('k010-webfont.woff2') format('woff2');
-    font-weight:normal;
- font-style:normal;
-}
-
-@font-face {
     font-family: 'k010_1';
     src: url('k010_1.TTF') format('truetype');
+}
+p.customeFont{
+    font-family: 'k010_1';
+    font-size:medium;
+    text-align :justify;
 }
