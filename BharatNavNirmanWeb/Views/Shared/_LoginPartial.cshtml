@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
-    using (Html.BeginForm("लॉग ऑफ", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right glyphicon glyphicon-off" }))
+    using (Html.BeginForm("लॉग ऑफ", "Account", FormMethod.Post, new { id = "logoutForm"}))
     {
     @Html.AntiForgeryToken()
 
@@ -16,7 +16,7 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li><span class="glyphicon glyphicon-user"> @Html.ActionLink("पंजीकरण", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</span></li>
+        <li>@Html.ActionLink("पंजीकरण", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("लॉग इन", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }

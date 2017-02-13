@@ -225,8 +225,10 @@
     <Content Include="Content\BnnCss\menu.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\bharat-darshan-hindi-magazine-hindi-stories-and-poems.jpg" />
     <Content Include="Content\Images\BnnLogo.png" />
     <Content Include="Content\Images\google-plus-6-xxl.png" />
+    <Content Include="Content\Images\header.gif" />
     <Content Include="Content\Images\indiaMap.png" />
     <Content Include="Content\Images\Twitter-logo-3D-shining-300x300.png" />
     <Content Include="Content\Images\Watsapp-and-Facebook.jpg" />
@@ -300,6 +302,18 @@
     <Content Include="Views\QuestionAnswer\BharatDarshan.cshtml" />
     <Content Include="Views\Map\भारत_का_मानचित्र.cshtml" />
     <Content Include="Views\Shared\_SocialMedia.cshtml" />
+    <Content Include="Views\Home\MissionAndVision.cshtml" />
+    <Content Include="Views\Home\भारत_दर्शन.cshtml" />
+    <Content Include="Views\Home\भारतीय_संविधान.cshtml" />
+    <Content Include="Views\Home\राजनीति_संयोजन.cshtml" />
+    <Content Include="Views\Home\पुस्तकालय.cshtml" />
+    <Content Include="Views\Home\योजना.cshtml" />
+    <Content Include="Views\Home\सूचना_खिड़की.cshtml" />
+    <Content Include="Views\Home\सेवा_खिड़की.cshtml" />
+    <Content Include="Views\Home\प्रकाशन.cshtml" />
+    <Content Include="Views\Home\आवेदन_प्रपत्र.cshtml" />
+    <Content Include="Views\Home\आइकॉन.cshtml" />
+    <Content Include="Views\Home\सूचना_का_अधिकार.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

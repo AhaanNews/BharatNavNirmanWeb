@@ -14,7 +14,12 @@ namespace BharatNavNirmanWeb.Controllers
             return View();
         }
 
-        public ActionResult BharatDarshan()
+        public ActionResult QuestionMaster()
+        {
+            return View();
+        }
+
+        public ActionResult ResponseMaster()
         {
             return View();
         }
